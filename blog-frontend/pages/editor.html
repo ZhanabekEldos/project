@@ -1,0 +1,31 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editor</title>
+  <link rel="stylesheet" href="/blog-frontend/css/reset.css">
+  <link rel="stylesheet" href="/blog-frontend/css/variables.css">
+  <link rel="stylesheet" href="/blog-frontend/css/layout.css">
+  <link rel="stylesheet" href="/blog-frontend/css/components.css">
+  <link rel="stylesheet" href="/blog-frontend/css/pages.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <main class="container card stack">
+    <h1>Create Post (`POST /api/posts`)</h1>
+    <form id="editor-form" class="stack">
+      <input name="title" placeholder="Title" required>
+      <textarea name="content" placeholder="Content" required></textarea>
+      <input name="excerpt" placeholder="Excerpt">
+      <input name="coverImageUrl" placeholder="Cover image URL">
+      <input name="category" placeholder="Category">
+      <input name="tags" placeholder="tag1, tag2, tag3">
+      <button type="submit">Create</button>
+    </form>
+    <pre id="result"></pre>
+  </main>
+  <div id="footer"></div>
+  <script type="module" src="/blog-frontend/js/pages/editor.js"></script>
+</body>
+</html>

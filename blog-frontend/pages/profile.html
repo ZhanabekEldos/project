@@ -1,0 +1,31 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile</title>
+  <link rel="stylesheet" href="/blog-frontend/css/reset.css">
+  <link rel="stylesheet" href="/blog-frontend/css/variables.css">
+  <link rel="stylesheet" href="/blog-frontend/css/layout.css">
+  <link rel="stylesheet" href="/blog-frontend/css/components.css">
+  <link rel="stylesheet" href="/blog-frontend/css/pages.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <main class="container stack">
+    <section class="card stack">
+      <h1>My Profile</h1>
+      <pre id="profile"></pre>
+    </section>
+    <section class="card stack">
+      <h2>Update Username (`PUT /api/users/profile`)</h2>
+      <form id="profile-form" class="row">
+        <input name="username" minlength="3" placeholder="New username" required>
+        <button type="submit">Update</button>
+      </form>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script type="module" src="/blog-frontend/js/pages/profile.js"></script>
+</body>
+</html>

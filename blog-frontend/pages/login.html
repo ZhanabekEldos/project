@@ -1,0 +1,33 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="/blog-frontend/css/reset.css">
+  <link rel="stylesheet" href="/blog-frontend/css/variables.css">
+  <link rel="stylesheet" href="/blog-frontend/css/layout.css">
+  <link rel="stylesheet" href="/blog-frontend/css/components.css">
+  <link rel="stylesheet" href="/blog-frontend/css/pages.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <main class="container auth-wrap card stack">
+    <h1>Login</h1>
+    <form id="login-form" class="stack">
+      <div>
+        <label>Email</label>
+        <input type="email" name="email" required>
+      </div>
+      <div>
+        <label>Password</label>
+        <input type="password" name="password" required>
+      </div>
+      <button type="submit">Login</button>
+      <p id="error" class="error"></p>
+    </form>
+  </main>
+  <div id="footer"></div>
+  <script type="module" src="/blog-frontend/js/pages/login.js"></script>
+</body>
+</html>

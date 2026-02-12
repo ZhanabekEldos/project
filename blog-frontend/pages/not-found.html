@@ -1,0 +1,27 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Not Found</title>
+  <link rel="stylesheet" href="/blog-frontend/css/reset.css">
+  <link rel="stylesheet" href="/blog-frontend/css/variables.css">
+  <link rel="stylesheet" href="/blog-frontend/css/layout.css">
+  <link rel="stylesheet" href="/blog-frontend/css/components.css">
+  <link rel="stylesheet" href="/blog-frontend/css/pages.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <main class="container card stack">
+    <h1>404</h1>
+    <p>Page not found.</p>
+    <a href="/blog-frontend/index.html">Go home</a>
+  </main>
+  <div id="footer"></div>
+  <script type="module">
+    import { loadPartial } from "/blog-frontend/js/ui.js";
+    loadPartial("#navbar", "/blog-frontend/partials/navbar.html");
+    loadPartial("#footer", "/blog-frontend/partials/footer.html");
+  </script>
+</body>
+</html>

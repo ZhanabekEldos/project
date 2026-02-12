@@ -1,0 +1,9 @@
+﻿.auth-wrap {
+  max-width: 480px;
+  margin: 30px auto;
+}
+.post-title {
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+.stack { display: grid; gap: 12px; }

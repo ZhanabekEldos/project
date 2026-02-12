@@ -1,0 +1,36 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Post Details</title>
+  <link rel="stylesheet" href="/blog-frontend/css/reset.css">
+  <link rel="stylesheet" href="/blog-frontend/css/variables.css">
+  <link rel="stylesheet" href="/blog-frontend/css/layout.css">
+  <link rel="stylesheet" href="/blog-frontend/css/components.css">
+  <link rel="stylesheet" href="/blog-frontend/css/pages.css">
+</head>
+<body>
+  <div id="navbar"></div>
+  <main class="container stack">
+    <section class="card">
+      <h1>Post Output (`GET /api/posts/:id`)</h1>
+      <p class="muted">Open page as `post.html?id=YOUR_POST_ID`</p>
+      <pre id="post"></pre>
+    </section>
+    <section class="card stack">
+      <h2>Comments Output (`GET /api/posts/:id/comments`)</h2>
+      <pre id="comments"></pre>
+      <form id="comment-form" class="stack">
+        <div>
+          <label>New comment text</label>
+          <textarea name="text" required></textarea>
+        </div>
+        <button type="submit">Create Comment</button>
+      </form>
+    </section>
+  </main>
+  <div id="footer"></div>
+  <script type="module" src="/blog-frontend/js/pages/post-details.js"></script>
+</body>
+</html>
